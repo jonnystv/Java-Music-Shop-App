@@ -36,6 +36,15 @@ public class TrumpetTest {
         assertEquals("Bach", trumpet1.getBrand());
     }
 
+    @Test
+    public void canGetModel(){
+        assertEquals("YTR-2330", trumpet1.getModel());
+    }
 
+    @Test
+    public void canSetModel(){
+        trumpet1.setModel("YTR-2330S");
+        assertEquals("YTR-2330S", trumpet1.getModel());
+    }
 
 }
