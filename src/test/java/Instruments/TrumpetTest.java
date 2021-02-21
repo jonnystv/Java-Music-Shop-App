@@ -25,5 +25,17 @@ public class TrumpetTest {
         assertEquals("Trumpet Two", trumpet1.getName());
     }
 
+    @Test
+    public void canGetBrand(){
+        assertEquals("Yamaha", trumpet1.getBrand());
+    }
+
+    @Test
+    public void canSetBrand(){
+        trumpet1.setBrand("Bach");
+        assertEquals("Bach", trumpet1.getBrand());
+    }
+
+
 
 }
