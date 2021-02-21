@@ -47,4 +47,15 @@ public class TrumpetTest {
         assertEquals("YTR-2330S", trumpet1.getModel());
     }
 
+    @Test
+    public void canGetInstrumentType(){
+        assertEquals(InstrumentType.BRASS, trumpet1.getType());
+    }
+
+    @Test
+    public void canSetInstrumentType(){
+        trumpet1.setType(InstrumentType.WOODWIND);
+        assertEquals(InstrumentType.WOODWIND, trumpet1.getType());
+    }
+
 }
