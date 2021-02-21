@@ -69,4 +69,15 @@ public class TrumpetTest {
         assertEquals("silver", trumpet1.getColour());
     }
 
+    @Test
+    public void canGetMaterial(){
+        assertEquals("brass", trumpet1.getMaterial());
+    }
+
+    @Test
+    public void canSetMaterial(){
+        trumpet1.setMaterial("steel");
+        assertEquals("steel", trumpet1.getMaterial());
+    }
+
 }
