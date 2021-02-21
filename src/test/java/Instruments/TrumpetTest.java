@@ -123,4 +123,9 @@ public class TrumpetTest {
         trumpet1.setCostPrice(250.00);
         assertEquals(250.00, trumpet1.getCostPrice(), 0.01);
     }
+
+    @Test
+    public void canPlayInstrument(){
+        assertEquals("Trumpets go baamp!", trumpet1.playInstrument());
+    }
 }
