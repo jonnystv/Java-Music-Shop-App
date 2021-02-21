@@ -4,9 +4,9 @@ import Instruments.InstrumentType;
 
 public abstract class Instrument {
 
+    private String name;
     private String brand;
     private String model;
-    private String name;
     private InstrumentType type;
     private String colour;
     private String material;
@@ -14,16 +14,24 @@ public abstract class Instrument {
     private double salePrice;
     private double costPrice;
 
-    public Instrument(String brand, String  model, String name, InstrumentType type, String colour, String material, String sound){
+    public Instrument(String name, String brand, String  model, InstrumentType type, String colour, String material, String sound){
+        this.name = name;
         this.brand = brand;
         this.model = model;
-        this.name = name;
         this.type = type;
         this.colour = colour;
         this.material = material;
         this.sound  = sound;
         this.salePrice = 0;
         this.costPrice = 0;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getBrand() {
@@ -40,14 +48,6 @@ public abstract class Instrument {
 
     public void setModel(String model) {
         this.model = model;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public InstrumentType getType() {
