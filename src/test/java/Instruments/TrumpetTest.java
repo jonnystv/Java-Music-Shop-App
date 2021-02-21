@@ -58,4 +58,15 @@ public class TrumpetTest {
         assertEquals(InstrumentType.WOODWIND, trumpet1.getType());
     }
 
+    @Test
+    public void canGetColour(){
+        assertEquals("gold", trumpet1.getColour());
+    }
+
+    @Test
+    public void canSetColour(){
+        trumpet1.setColour("silver");
+        assertEquals("silver", trumpet1.getColour());
+    }
+
 }
