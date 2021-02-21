@@ -112,4 +112,15 @@ public class TrumpetTest {
         trumpet1.setSalePrice(380.00);
         assertEquals(380.00, trumpet1.getSalePrice(), 0.01);
     }
+
+    @Test
+    public void canGetCostPrice(){
+        assertEquals(0, trumpet1.getCostPrice(), 0.01);
+    }
+
+    @Test
+    public void canSetCostPrice(){
+        trumpet1.setCostPrice(250.00);
+        assertEquals(250.00, trumpet1.getCostPrice(), 0.01);
+    }
 }
