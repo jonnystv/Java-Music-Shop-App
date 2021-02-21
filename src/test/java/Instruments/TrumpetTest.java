@@ -11,7 +11,7 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet1 = new Trumpet("Trumpet One", "Yamaha", "YTR-2330", InstrumentType.BRASS, "gold", "brass", "baamp!" );
+        trumpet1 = new Trumpet("Trumpet One", "Yamaha", "YTR-2330", InstrumentType.BRASS, "gold", "brass", "baamp!", 380.00, 250.00 );
     }
 
     @Test
@@ -78,6 +78,17 @@ public class TrumpetTest {
     public void canSetMaterial(){
         trumpet1.setMaterial("steel");
         assertEquals("steel", trumpet1.getMaterial());
+    }
+
+    @Test
+    public void canGetSound(){
+        assertEquals("baamp!", trumpet1.getSound());
+    }
+
+    @Test
+    public void canSetSound(){
+        trumpet1.setSound("boomp baamp!");
+        assertEquals("boomp baamp!", trumpet1.getSound());
     }
 
 }

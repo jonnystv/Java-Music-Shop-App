@@ -14,7 +14,7 @@ public abstract class Instrument {
     private double salePrice;
     private double costPrice;
 
-    public Instrument(String name, String brand, String  model, InstrumentType type, String colour, String material, String sound){
+    public Instrument(String name, String brand, String  model, InstrumentType type, String colour, String material, String sound, double salePrice, double costPrice){
         this.name = name;
         this.brand = brand;
         this.model = model;
