@@ -1,4 +1,4 @@
-package Behaviours;
+package Instruments;
 
 public enum InstrumentType {
 

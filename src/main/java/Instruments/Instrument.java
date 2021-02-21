@@ -1,6 +1,6 @@
 package Instruments;
 
-import Behaviours.InstrumentType;
+import Instruments.InstrumentType;
 
 public abstract class Instrument {
 
