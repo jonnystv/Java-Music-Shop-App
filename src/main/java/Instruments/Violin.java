@@ -15,8 +15,8 @@ public class Violin extends Instrument implements IPlay {
         return stringNumber;
     }
 
-    public void setStringNumber(int valveNumber) {
-        this.stringNumber = valveNumber;
+    public void setStringNumber(int stringNumber) {
+        this.stringNumber = stringNumber;
     }
 
     public String playInstrument(){

@@ -7,125 +7,125 @@ import static org.junit.Assert.assertEquals;
 
 public class ViolinTest {
 
-    Violin Violin1;
+    Violin violin1;
 
     @Before
     public void before(){
-        Violin1 = new Violin("Violin One", "Hidersine", "Venezia", InstrumentType.STRINGED, "brown", "spruce", "mmmvvvhhh!", 4, 0, 0 );
+        violin1 = new Violin("Violin One", "Hidersine", "Venezia", InstrumentType.STRINGED, "brown", "spruce", "mmmvvvhhh!", 4, 0, 0 );
     }
 
     @Test
     public void canGetName(){
-        assertEquals("Violin One", Violin1.getName());
+        assertEquals("Violin One", violin1.getName());
     }
 
     @Test
     public void canSetName(){
-        Violin1.setName("Violin Two");
-        assertEquals("Violin Two", Violin1.getName());
+        violin1.setName("Violin Two");
+        assertEquals("Violin Two", violin1.getName());
     }
 
     @Test
     public void canGetBrand(){
-        assertEquals("Hidersine", Violin1.getBrand());
+        assertEquals("Hidersine", violin1.getBrand());
     }
 
     @Test
     public void canSetBrand(){
-        Violin1.setBrand("Cremona");
-        assertEquals("Cremona", Violin1.getBrand());
+        violin1.setBrand("Cremona");
+        assertEquals("Cremona", violin1.getBrand());
     }
 
     @Test
     public void canGetModel(){
-        assertEquals("Venezia", Violin1.getModel());
+        assertEquals("Venezia", violin1.getModel());
     }
 
     @Test
     public void canSetModel(){
-        Violin1.setModel("SV-500");
-        assertEquals("SV-500", Violin1.getModel());
+        violin1.setModel("SV-500");
+        assertEquals("SV-500", violin1.getModel());
     }
 
     @Test
     public void canGetInstrumentType(){
-        assertEquals(InstrumentType.STRINGED, Violin1.getType());
+        assertEquals(InstrumentType.STRINGED, violin1.getType());
     }
 
     @Test
     public void canSetInstrumentType(){
-        Violin1.setType(InstrumentType.KEYBOARD);
-        assertEquals(InstrumentType.KEYBOARD, Violin1.getType());
+        violin1.setType(InstrumentType.KEYBOARD);
+        assertEquals(InstrumentType.KEYBOARD, violin1.getType());
     }
 
     @Test
     public void canGetColour(){
-        assertEquals("brown", Violin1.getColour());
+        assertEquals("brown", violin1.getColour());
     }
 
     @Test
     public void canSetColour(){
-        Violin1.setColour("black");
-        assertEquals("black", Violin1.getColour());
+        violin1.setColour("black");
+        assertEquals("black", violin1.getColour());
     }
 
     @Test
     public void canGetMaterial(){
-        assertEquals("spruce", Violin1.getMaterial());
+        assertEquals("spruce", violin1.getMaterial());
     }
 
     @Test
     public void canSetMaterial(){
-        Violin1.setMaterial("maple");
-        assertEquals("maple", Violin1.getMaterial());
+        violin1.setMaterial("maple");
+        assertEquals("maple", violin1.getMaterial());
     }
 
     @Test
     public void canGetSound(){
-        assertEquals("mmmvvvhhh!", Violin1.getSound());
+        assertEquals("mmmvvvhhh!", violin1.getSound());
     }
 
     @Test
     public void canSetSound(){
-        Violin1.setSound("hmmm mmmvvvhhh!");
-        assertEquals("hmmm mmmvvvhhh!", Violin1.getSound());
+        violin1.setSound("hmmm mmmvvvhhh!");
+        assertEquals("hmmm mmmvvvhhh!", violin1.getSound());
     }
 
     @Test
     public void canGetStringNumber(){
-        assertEquals(4, Violin1.getStringNumber());
+        assertEquals(4, violin1.getStringNumber());
     }
 
     @Test
     public void canSetStringNumber(){
-        Violin1.setStringNumber(6);
-        assertEquals(6, Violin1.getStringNumber());
+        violin1.setStringNumber(6);
+        assertEquals(6, violin1.getStringNumber());
     }
 
     @Test
     public void canGetSalePrice(){
-        assertEquals(0, Violin1.getSalePrice(), 0.01);
+        assertEquals(0, violin1.getSalePrice(), 0.01);
     }
 
     @Test
     public void canSetSalePrice(){
-        Violin1.setSalePrice(455.00);
-        assertEquals(455.00, Violin1.getSalePrice(), 0.01);
+        violin1.setSalePrice(455.00);
+        assertEquals(455.00, violin1.getSalePrice(), 0.01);
     }
 
     @Test
     public void canGetCostPrice(){
-        assertEquals(0, Violin1.getCostPrice(), 0.01);
+        assertEquals(0, violin1.getCostPrice(), 0.01);
     }
 
     @Test
     public void canSetCostPrice(){
-        Violin1.setCostPrice(350.00);
-        assertEquals(350.00, Violin1.getCostPrice(), 0.01);
+        violin1.setCostPrice(350.00);
+        assertEquals(350.00, violin1.getCostPrice(), 0.01);
     }
 
     @Test
     public void canPlayInstrument(){
-        assertEquals("Violins go mmmvvvhhh!", Violin1.playInstrument());
+        assertEquals("Violins go mmmvvvhhh!", violin1.playInstrument());
     }
 }
