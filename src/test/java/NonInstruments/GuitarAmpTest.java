@@ -1,6 +1,5 @@
 package NonInstruments;
 
-import Instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
