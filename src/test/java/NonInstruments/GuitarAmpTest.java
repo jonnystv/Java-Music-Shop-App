@@ -79,4 +79,11 @@ public class GuitarAmpTest {
         amp1.setWattRating(38);
         assertEquals(38, amp1.getWattRating(), 0.01);
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        amp1.setSalePrice(1200.00);
+        amp1.setCostPrice(1000.00);
+        assertEquals(200.00, amp1.calculateMarkup(), 0.01);
+    }
 }

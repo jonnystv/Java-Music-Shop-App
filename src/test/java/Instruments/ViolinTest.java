@@ -128,4 +128,11 @@ public class ViolinTest {
     public void canPlayInstrument(){
         assertEquals("Violins go mmmvvvhhh!", violin1.playInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        violin1.setSalePrice(455.00);
+        violin1.setCostPrice(350.00);
+        assertEquals(105.00, violin1.calculateMarkup(), 0.01);
+    }
 }

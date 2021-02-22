@@ -1,6 +1,8 @@
 package NonInstruments;
 
-public abstract class NonInstrument {
+import Behaviours.ISell;
+
+public abstract class NonInstrument implements ISell {
 
     private String name;
     private String description;
@@ -54,5 +56,9 @@ public abstract class NonInstrument {
 
     public void setCostPrice(double costPrice) {
         this.costPrice = costPrice;
+    }
+
+    public double calculateMarkup() {
+        return this.salePrice - this.costPrice;
     }
 }

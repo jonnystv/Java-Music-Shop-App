@@ -79,4 +79,11 @@ public class GuitarStringTest {
         stringSet1.setStringMaterial("bronze");
         assertEquals("bronze", stringSet1.getStringMaterial());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        stringSet1.setSalePrice(6.00);
+        stringSet1.setCostPrice(5.00);
+        assertEquals(1.00, stringSet1.calculateMarkup(), 0.01);
+    }
 }

@@ -128,4 +128,11 @@ public class PianoTest {
     public void canPlayInstrument(){
         assertEquals("Pianos go Plink Plonk!", piano1.playInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        piano1.setSalePrice(7500.00);
+        piano1.setCostPrice(7000.00);
+        assertEquals(500.00, piano1.calculateMarkup(), 0.01);
+    }
 }

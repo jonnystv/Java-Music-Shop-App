@@ -128,4 +128,11 @@ public class GuitarTest {
     public void canPlayInstrument(){
         assertEquals("Guitars go strummm!", guitar1.playInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        guitar1.setSalePrice(999.00);
+        guitar1.setCostPrice(800.00);
+        assertEquals(199.00, guitar1.calculateMarkup(), 0.01);
+    }
 }

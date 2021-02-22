@@ -1,8 +1,9 @@
 package Instruments;
 
+import Behaviours.ISell;
 import Instruments.InstrumentType;
 
-public abstract class Instrument {
+public abstract class Instrument implements ISell {
 
     private String name;
     private String brand;
@@ -96,5 +97,9 @@ public abstract class Instrument {
 
     public void setCostPrice(double costPrice) {
         this.costPrice = costPrice;
+    }
+
+    public double calculateMarkup() {
+        return this.salePrice - this.costPrice;
     }
 }

@@ -128,4 +128,11 @@ public class TromboneTest {
     public void canPlayInstrument(){
         assertEquals("Trombones go boomb!", Trombone1.playInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        Trombone1.setSalePrice(1400.00);
+        Trombone1.setCostPrice(1100.00);
+        assertEquals(300.00, Trombone1.calculateMarkup(), 0.01);
+    }
 }
