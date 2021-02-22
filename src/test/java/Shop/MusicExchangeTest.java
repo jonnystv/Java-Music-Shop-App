@@ -45,4 +45,14 @@ public class MusicExchangeTest {
         shop1.addToShopStock(guitar1);
         assertEquals(1, shop1.shopStockCount());
     }
+
+    @Test
+    public void canRemoveFromShopStock(){
+        shop1.addToShopStock(guitar1);
+        shop1.addToShopStock(piano1);
+        shop1.addToShopStock(trumpet1);
+        shop1.addToShopStock(amp1);
+        shop1.removeFromShopStock(trumpet1);
+        assertEquals(3, shop1.shopStockCount());
+    }
 }
