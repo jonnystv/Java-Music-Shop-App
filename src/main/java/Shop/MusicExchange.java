@@ -26,4 +26,12 @@ public class MusicExchange {
         return shopStock;
     }
 
+    public int shopStockCount(){
+        return this.shopStock.size();
+    }
+
+    public void addToShopStock(ISell newStockItem){
+        this.shopStock.add(newStockItem);
+    }
+
 }

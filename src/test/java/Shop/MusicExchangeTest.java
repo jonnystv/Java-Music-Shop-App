@@ -42,7 +42,7 @@ public class MusicExchangeTest {
 
     @Test
     public void canAddToShopStock(){
-        shop1.addToShopStoock(guitar1);
+        shop1.addToShopStock(guitar1);
         assertEquals(1, shop1.shopStockCount());
     }
 }
