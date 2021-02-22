@@ -24,5 +24,5 @@ public class MusicExchange {
 
     public ArrayList<ISell> getShopStock() {
         return shopStock;
-    } 
+    }
 }
