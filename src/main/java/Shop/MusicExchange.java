@@ -34,4 +34,8 @@ public class MusicExchange {
         this.shopStock.add(newStockItem);
     }
 
+    public void removeFromShopStock(ISell stockItem){
+        this.shopStock.remove(stockItem);
+    }
+
 }
